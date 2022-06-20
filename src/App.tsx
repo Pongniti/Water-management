@@ -1,13 +1,12 @@
-import React from "react";
-import Home from "./components/pages/Home";
-import Header from "./components/pages/Header";
-import Sidebar from "./components/pages/Sidebar";
+import React, { useEffect } from 'react';
+import Home from "./components/Map/Home";
+import Header from "./components/Map/Header";
+import Sidebar from "./components/Map/Sidebar";
 import { useState } from "react";
 import { Polygon } from "react-leaflet";
 import '../src/App.css'
-// import PolygonMap from "./components/pages/Polygon";
 
-function App() {
+const App = () => {
   const [show, setShow] = useState(true);
 
   if (show) {
@@ -34,7 +33,7 @@ function App() {
           </button>
         </div>
         <Home />
-        {/* <PolygonMap /> */}
+      
       </div>
     );
   }
