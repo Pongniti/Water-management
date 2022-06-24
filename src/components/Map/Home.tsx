@@ -157,9 +157,7 @@ function Home(this: any) {
                   แบตเตอรี่
                   <div className="p-2 bg-light border"></div>
                   <br />
-                  <Link href="#" underline="hover">
-                    {"รายละเอียดเพิ่มเติม"}
-                  </Link>
+                 
                 </Popup>
               }
 
